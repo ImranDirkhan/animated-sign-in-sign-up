@@ -17,8 +17,8 @@ body {
 
 .container {
   position: relative;
-  width: 850px;
-  height: 550px;
+  width: fit-content;
+  height: fit-content;
   margin: 20px;
   background-color: #fff;
   border-radius: 30px;
@@ -211,7 +211,7 @@ form {
 /* MEDIA QUERIES */
 @media screen and (max-width: 650px) {
   .container {
-    height: 100vh;
+    height: cal(100vh - 20px);
   }
 
   .form-box {
