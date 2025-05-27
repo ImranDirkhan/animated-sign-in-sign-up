@@ -1,6 +1,8 @@
-const container = document.getElementById("container");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
+"use strict";
+
+const container = document.querySelector(".container");
+const registerBtn = document.querySelector(".register-btn");
+const loginBtn = document.querySelector(".login-btn");
 
 registerBtn.addEventListener("click", function () {
   container.classList.add("active");

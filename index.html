@@ -3,62 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Sign-in Page</title>
-    <link rel="shortcut icon" href="#" />
+    <title>Animated Sign-in/Sign-up Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up">
-        <form>
-          <h1>Create account</h1>
-          <div class="social-icons">
-            <a href="#" class="icon">Google</a>
-            <a href="#" class="icon">Microsoft</a>
-            <a href="#" class="icon">GitHub</a>
-            <a href="#" class="icon">Facebook</a>
+    <div class="container">
+      <!-- Login Form Box -->
+      <div class="form-box login">
+        <form action="">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <span class="icon">💚</span>
           </div>
-          <span>or use your email for registeration:</span>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
-          <button>Sign up</button>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <span class="icon">💚</span>
+          </div>
+          <div class="forgot-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+          </div>
         </form>
       </div>
-      <div class="form-container sign-in">
-        <form>
-          <h1>Sign in</h1>
-          <div class="social-icons">
-            <a href="#" class="icon">Google</a>
-            <a href="#" class="icon">Microsoft</a>
-            <a href="#" class="icon">GitHub</a>
-            <a href="#" class="icon">Facebook</a>
+
+      <!-- Registration Form Box -->
+      <div class="form-box register">
+        <form action="">
+          <h1>Registration</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <span class="icon">💚</span>
           </div>
-          <span>or use your email and password:</span>
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
-          <a href="#">Forgot password?</a>
-          <button>Sign in</button>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <span class="icon">💚</span>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <span class="icon">💚</span>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <p>or register with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+            <a href="#"><span class="icon">💚</span></a>
+          </div>
         </form>
       </div>
-      <div class="toggle-container">
-        <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1>Welcome back!</h1>
-            <p>Enter your personal details to use all of the site's features</p>
-            <button class="hidden" id="login">Sign in</button>
-          </div>
-          <div class="toggle-panel toggle-right">
-            <h1>Hello!</h1>
-            <p>
-              Register with your personal details to use all of the site's
-              features
-            </p>
-            <button class="hidden" id="register">Sign up</button>
-          </div>
+
+      <!-- Toggle box -->
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello!</h1>
+          <p>Don't have an account?</p>
+          <button class="btn register-btn">Register</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome back!</h1>
+          <p>Already have an account?</p>
+          <button class="btn login-btn">Login</button>
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
