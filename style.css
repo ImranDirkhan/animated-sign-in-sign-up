@@ -212,7 +212,7 @@ form {
 /* MEDIA QUERIES */
 @media screen and (max-width: 650px) {
   .container {
-    height: cal(100vh - 40px);
+    height: cal(100vh - 20px);
   }
 
   .form-box {
