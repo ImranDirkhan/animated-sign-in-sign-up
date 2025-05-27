@@ -17,8 +17,8 @@ body {
 
 .container {
   position: relative;
-  width: fit-content;
-  height: fit-content;
+  width: 850px;
+  height: 600px;
   margin: 20px;
   background-color: #fff;
   border-radius: 30px;
